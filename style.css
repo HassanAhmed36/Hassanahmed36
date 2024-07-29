@@ -1,7 +1,9 @@
 * {
   font-family: "Titillium Web", sans-serif;
+  font-size: medium;
+  font-weight: 400;
 }
-.text-bg-light{
-    font-size: 13px !important;
-    font-weight: 500 !important;
+.text-bg-light {
+  font-size: 13px !important;
+  font-weight: 500 !important;
 }

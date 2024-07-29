@@ -1,92 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hassan Ahmed - Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-  </head>
 
-  <body>
-    <div class="container my-5">
-      <div class="mb-4">
-        <h1 class="mb-3 fw-bold" style="font-size: 3rem">Hassan Ahmed</h1>
-        <p>
-          <a
-            href="https://github.com/HassanAhmed36/"
-            target="_blank"
-            class="me-2"
-            ><i class="bi bi-github text-black me-2 fs-5"></i
-          ></a>
-          <a
-            href="https://linkedin.com/in/hassanahmed19"
-            target="_blank"
-            class="me-2"
-            ><i class="bi bi-linkedin text-black me-2 fs-5"></i
-          ></a>
-          <a
-            href="mailto:hassanahmed3652@gmail.com"
-            target="_blank"
-            class="me-2"
-            ><i class="bi bi-envelope-fill text-black me-2 fs-5"></i
-          ></a>
-          <a href="tel:03136529768" target="_blank" class="me-2"
-            ><i class="bi bi-telephone-fill text-black me-2 fs-5"></i
-          ></a>
-        </p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hassan Ahmed - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font: normal 75% Arial, Helvetica, sans-serif;
+    }
 
-        <p class="mb-3">
-          Full Stack Developer with a focus on developing and maintaining web
-          applications using Laravel. I have experience in PHP and have worked
-          with JavaScript frameworks like React. My major expertise lies in
-          Laravel, ensuring efficient and scalable web solutions.
-        </p>
+    canvas {
+      display: block;
+      vertical-align: bottom;
+    }
+
+    .first-section {
+      position: relative;
+      background-color: #391242;
+      color: white;
+    }
+
+    .text-dark {
+      color: white !important;
+    }
+
+    .text-decoration-none {
+      text-decoration: none;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #391242;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+
+    .count-particles {
+      background: #000022;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      width: 80px;
+      color: #13e8e9;
+      font-size: 0.8em;
+      text-align: left;
+      text-indent: 4px;
+      line-height: 14px;
+      padding-bottom: 2px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    .js-count-particles {
+      font-size: 1.1em;
+    }
+
+    #stats,
+    .count-particles {
+      -webkit-user-select: none;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    #stats {
+      border-radius: 3px 3px 0 0;
+      overflow: hidden;
+    }
+
+    .count-particles {
+      border-radius: 0 0 3px 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="first-section" style="min-height: 99.5vh">
+    <div id="particles-js"></div>
+
+    <div class="container py-3" style="position: relative; z-index: 1">
+      <div class="d-flex justify-content-center align-items-center flex-column py-5">
+        <img src="https://hassanahmed.netlify.app/assets/images/Pic.jpg"  alt="" style="border-radius: 50%;" />
+        <div class="text-center">
+          <h1 class="fw-bold" style="font-size:3rem">Hassan Ahmed<h2>
+          <p class="fs-5">PHP & Laravel Developer</p>
+          <div>
+            <p class="text-center">
+              <a
+                href="https://github.com/HassanAhmed36/"
+                target="_blank"
+                class="me-2"
+                ><i class="bi bi-github text-white me-2 fs-5"></i
+              ></a>
+              <a
+                href="https://linkedin.com/in/hassanahmed19"
+                target="_blank"
+                class="me-2"
+                ><i class="bi bi-linkedin text-white me-2 fs-5"></i
+              ></a>
+              <a
+                href="mailto:hassanahmed3652@gmail.com"
+                target="_blank"
+                class="me-2"
+                ><i class="bi bi-envelope-fill text-white me-2 fs-5"></i
+              ></a>
+              <a href="tel:03136529768" target="_blank" class="me-2"
+                ><i class="bi bi-telephone-fill text-white me-2 fs-5"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      
       </div>
-      <hr />
-      <div class="mb-4">
-        <h4 class="mb-4 fw-semibold">Experience</h4>
+      <div class="my-4">
+        <h2 class="mb-4 fw-semibold">Experience</h2>
         <div class="mb-2">
-          <p class="fw-semibold">
+          <h5 class="fw-semibold my-4">
             Nextacllc - PHP developer (May 2024 , Ongoing)
-          </p>
+          </h5>
           <p>
             I am currently working as a full stack developer on the Guinness
             Press system, a research paper publishing and submission platform
             for my office. I am responsible for developing a complete dynamic
             website and dashboard. More details about this project can be found
             in the project section.
-            <!-- <a class="me-2" href="https://github.com/HassanAhmed36/Guinness-Press-System" target="_blank">Github</a>
-          <a href="https://www.guinnesspress.org/" target="_blank">Site link</a> -->
           </p>
         </div>
         <div class="mb-2">
-          <p class="fw-semibold">
+          <h5 class="fw-semibold my-4">
             OneClick - PHP developer (Mar 2023 , May 2024 )
-          </p>
+          </h5>
           <p>
             I completed an unfinished office management system for our office
             using Laravel. I enhanced existing features and added new modules to
             improve functionality. This system is currently used by
             approximately 40 people daily. More details about this project can
             be found in the project section
-            <!-- <a class="me-2" href="https://github.com/HassanAhmed36/One-Click-Portal" target="_blank">Github</a>
-          <a href="https://newportal.1clickdevelopers.com/" target="_blank">Site link</a> -->
           </p>
           <p>
             I am currently involved in several projects detailed in the Projects
@@ -94,8 +157,8 @@
           </p>
         </div>
       </div>
-      <hr />
-      <div class="mb-4">
+
+      <div class="my-4">
         <h4 class="mb-4 fw-semibold">Skills</h4>
         <div class="mb-2">
           <span
@@ -150,8 +213,8 @@
           >
         </div>
       </div>
-      <hr />
-      <div class="mb-4">
+
+      <div class="my-4">
         <h3 class="mb-4 fw-semibold">Projects</h3>
         <div class="mb-4">
           <div class="d-flex align-items-center gap-4 mb-3">
@@ -315,11 +378,144 @@
           </p>
         </div>
       </div>
+      </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 200, 
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: "#ffffff",
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            width: 0,
+            color: "#000000",
+          },
+          polygon: {
+            nb_sides: 5,
+          },
+        },
+        opacity: {
+          value: 0.1,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: {
+            enable: false,
+            speed: 40,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+          distance: 500,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 2,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "bottom",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: true,
+            mode: "bubble",
+          },
+          onclick: {
+            enable: true,
+            mode: "repulse",
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 0.5,
+            },
+          },
+          bubble: {
+            distance: 400,
+            size: 4,
+            duration: 0.3,
+            opacity: 1,
+            speed: 3,
+          },
+          repulse: {
+            distance: 200,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+
+    var count_particles, stats, update;
+    stats = new Stats();
+    stats.setMode(0);
+    stats.domElement.style.position = "absolute";
+    stats.domElement.style.left = "0px";
+    stats.domElement.style.top = "0px";
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector(".js-count-particles");
+    update = function () {
+      stats.begin();
+      stats.end();
+      if (
+        window.pJSDom[0].pJS.particles &&
+        window.pJSDom[0].pJS.particles.array
+      ) {
+        count_particles.innerText =
+          window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
