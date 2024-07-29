@@ -2,520 +2,484 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hassan Ahmed - Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <style>
-    body {
-      margin: 0;
-      font: normal 75% Arial, Helvetica, sans-serif;
-    }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hassan Ahmed - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+        body {
+            margin: 0;
+        }
 
-    canvas {
-      display: block;
-      vertical-align: bottom;
-    }
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        }
 
-    .first-section {
-      position: relative;
-      background-color: #391242;
-      color: white;
-    }
+        .first-section {
+            position: relative;
+            background-color: #391242;
+            color: white;
+        }
 
-    .text-dark {
-      color: white !important;
-    }
+        .text-dark {
+            color: white !important;
+        }
 
-    .text-decoration-none {
-      text-decoration: none;
-    }
+        .text-decoration-none {
+            text-decoration: none;
+        }
 
-    #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: #391242;
-      background-image: url("");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #391242;
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
 
-    .count-particles {
-      background: #000022;
-      position: absolute;
-      top: 48px;
-      left: 0;
-      width: 80px;
-      color: #13e8e9;
-      font-size: 0.8em;
-      text-align: left;
-      text-indent: 4px;
-      line-height: 14px;
-      padding-bottom: 2px;
-      font-family: Helvetica, Arial, sans-serif;
-      font-weight: bold;
-    }
+        .count-particles {
+            background: #000022;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 80px;
+            color: #13e8e9;
+            font-size: 0.8em;
+            text-align: left;
+            text-indent: 4px;
+            line-height: 14px;
+            padding-bottom: 2px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: bold;
+        }
 
-    .js-count-particles {
-      font-size: 1.1em;
-    }
+        .js-count-particles {
+            font-size: 1.1em;
+        }
 
-    #stats,
-    .count-particles {
-      -webkit-user-select: none;
-      margin-top: 5px;
-      margin-left: 5px;
-    }
+        #stats,
+        .count-particles {
+            -webkit-user-select: none;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
 
-    #stats {
-      border-radius: 3px 3px 0 0;
-      overflow: hidden;
-    }
+        #stats {
+            border-radius: 3px 3px 0 0;
+            overflow: hidden;
+        }
 
-    .count-particles {
-      border-radius: 0 0 3px 3px;
-    }
-  </style>
+        .count-particles {
+            border-radius: 0 0 3px 3px;
+        }
+    </style>
 </head>
 
 <body>
-  <div class="first-section" style="min-height: 99.5vh">
-    <div id="particles-js"></div>
+    <div class="first-section" style="min-height: 99.5vh">
+        <div id="particles-js"></div>
 
-    <div class="container py-3" style="position: relative; z-index: 1">
-      <div class="d-flex justify-content-center align-items-center flex-column py-5">
-        <img src="https://hassanahmed.netlify.app/assets/images/Pic.jpg"  alt="" style="border-radius: 50%;" />
-        <div class="text-center">
-          <h1 class="fw-bold" style="font-size:3rem">Hassan Ahmed<h2>
-          <p class="fs-5">PHP & Laravel Developer</p>
-          <div>
-            <p class="text-center">
-              <a
-                href="https://github.com/HassanAhmed36/"
-                target="_blank"
-                class="me-2"
-                ><i class="bi bi-github text-white me-2 fs-5"></i
-              ></a>
-              <a
-                href="https://linkedin.com/in/hassanahmed19"
-                target="_blank"
-                class="me-2"
-                ><i class="bi bi-linkedin text-white me-2 fs-5"></i
-              ></a>
-              <a
-                href="mailto:hassanahmed3652@gmail.com"
-                target="_blank"
-                class="me-2"
-                ><i class="bi bi-envelope-fill text-white me-2 fs-5"></i
-              ></a>
-              <a href="tel:03136529768" target="_blank" class="me-2"
-                ><i class="bi bi-telephone-fill text-white me-2 fs-5"></i
-              ></a>
-            </p>
-          </div>
-        </div>
-      
-      </div>
-      <div class="my-4">
-        <h2 class="mb-4 fw-semibold">Experience</h2>
-        <div class="mb-2">
-          <h5 class="fw-semibold my-4">
-            Nextacllc - PHP developer (May 2024 , Ongoing)
-          </h5>
-          <p>
-            I am currently working as a full stack developer on the Guinness
-            Press system, a research paper publishing and submission platform
-            for my office. I am responsible for developing a complete dynamic
-            website and dashboard. More details about this project can be found
-            in the project section.
-          </p>
-        </div>
-        <div class="mb-2">
-          <h5 class="fw-semibold my-4">
-            OneClick - PHP developer (Mar 2023 , May 2024 )
-          </h5>
-          <p>
-            I completed an unfinished office management system for our office
-            using Laravel. I enhanced existing features and added new modules to
-            improve functionality. This system is currently used by
-            approximately 40 people daily. More details about this project can
-            be found in the project section
-          </p>
-          <p>
-            I am currently involved in several projects detailed in the Projects
-            section.
-          </p>
-        </div>
-      </div>
+        <div class="container py-3" style="position: relative; z-index: 1">
+            <div class="d-flex justify-content-center align-items-center flex-column py-5">
+                <img src="https://hassanahmed.netlify.app/assets/images/Pic.jpg" alt="" style="border-radius: 50%;" />
+                <div class="text-center">
+                    <h1 class="fw-bold" style="font-size:3rem">Hassan Ahmed<h2>
+                            <p class="fs-5">PHP & Laravel Developer</p>
+                            <div>
+                                <p class="text-center">
+                                    <a href="https://github.com/HassanAhmed36/" target="_blank" class="me-2"><i
+                                            class="bi bi-github text-white me-2 fs-5"></i></a>
+                                    <a href="https://linkedin.com/in/hassanahmed19" target="_blank" class="me-2"><i
+                                            class="bi bi-linkedin text-white me-2 fs-5"></i></a>
+                                    <a href="mailto:hassanahmed3652@gmail.com" target="_blank" class="me-2"><i
+                                            class="bi bi-envelope-fill text-white me-2 fs-5"></i></a>
+                                    <a href="tel:03136529768" target="_blank" class="me-2"><i
+                                            class="bi bi-telephone-fill text-white me-2 fs-5"></i></a>
+                                </p>
+                            </div>
+                </div>
 
-      <div class="my-4">
-        <h4 class="mb-4 fw-semibold">Skills</h4>
-        <div class="mb-2">
-          <span
-            class="badge text-bg-light px-3 py-2 me-2 mb-3"
-            style="font-size: 14px !important"
-            >HTML</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >CSS</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >Javascript</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >Bootstrap</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >Jquery</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >React</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >Git</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >PHP</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 mx-2 mb-3"
-            style="font-size: 14px !important"
-            >Laravel</span
-          >
-          <span
-            class="badge text-bg-light px-3 py-2 ms-2 mb-3"
-            style="font-size: 14px !important"
-            >MySQL</span
-          >
-        </div>
-      </div>
+            </div>
+            <div class="my-4">
+                <h2 class="mb-4 fw-semibold">Experience</h2>
+                <div class="mb-2">
+                    <h5 class="fw-semibold my-4">
+                        Nextacllc - PHP developer (May 2024 , Ongoing)
+                    </h5>
+                    <p>
+                        I am currently working as a full stack developer on the Guinness
+                        Press system, a research paper publishing and submission platform
+                        for my office. I am responsible for developing a complete dynamic
+                        website and dashboard. More details about this project can be found
+                        in the project section.
+                    </p>
+                </div>
+                <div class="mb-2">
+                    <h5 class="fw-semibold my-4">
+                        OneClick - PHP developer (Mar 2023 , May 2024 )
+                    </h5>
+                    <p>
+                        I completed an unfinished office management system for our office
+                        using Laravel. I enhanced existing features and added new modules to
+                        improve functionality. This system is currently used by
+                        approximately 40 people daily. More details about this project can
+                        be found in the project section
+                    </p>
+                    <p>
+                        I am currently involved in several projects detailed in the Projects
+                        section.
+                    </p>
+                </div>
+            </div>
 
-      <div class="my-4">
-        <h3 class="mb-4 fw-semibold">Projects</h3>
-        <div class="mb-4">
-          <div class="d-flex align-items-center gap-4 mb-3">
-            <div>
-              <h5 class="fw-semibold">Guinness Press System</h5>
+            <div class="my-4">
+                <h4 class="mb-4 fw-semibold">Skills</h4>
+                <div class="mb-2">
+                    <span class="badge text-bg-light px-3 py-2 me-2 mb-3" style="font-size: 14px !important">HTML</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3" style="font-size: 14px !important">CSS</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3"
+                        style="font-size: 14px !important">Javascript</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3"
+                        style="font-size: 14px !important">Bootstrap</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3"
+                        style="font-size: 14px !important">Jquery</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3"
+                        style="font-size: 14px !important">React</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3" style="font-size: 14px !important">Git</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3" style="font-size: 14px !important">PHP</span>
+                    <span class="badge text-bg-light px-3 py-2 mx-2 mb-3"
+                        style="font-size: 14px !important">Laravel</span>
+                    <span class="badge text-bg-light px-3 py-2 ms-2 mb-3"
+                        style="font-size: 14px !important">MySQL</span>
+                </div>
             </div>
-            <div>
-              <a
-                class="me-2"
-                href="https://github.com/HassanAhmed36/Laravel-HRM"
-                target="_blank"
-                ><i class="bi bi-github text-black me-2 fs-5 pb-4"></i
-              ></a>
-            </div>
-          </div>
-          <p>
-            The Guinness Press System is an article publishing platform designed
-            to receive submissions from authors. The website is managed via a
-            control dashboard and features three roles: author, board member,
-            and admin. All modules are described below:
-          </p>
-          <ul>
-            <li class="mb-2">
-              <b>Submission Management</b>: Authors can submit articles after
-              registering themselves. The submission process involves a
-              multi-step workflow. Initially, the author submits the article and
-              pays the Article Processing Charge (APC). Once payment is
-              received, the submission is assigned to board members for review.
-            </li>
-            <li class="mb-2">
-              <b>Peer Review Management</b>: After payment, the article is
-              assigned to a board member for peer review. The board member
-              reviews the article and either approves or rejects it.
-            </li>
-            <li class="mb-2">
-              <b>Publication Management</b>: Once an article is approved, it
-              moves to the publication stage. Articles are organized into
-              issues, which belong to volumes connected to journals. The
-              management of journals, volumes, issues, and articles is done
-              based on their publishing date.
-            </li>
-            <li class="mb-2">
-              <b>Payment and Notifications</b>: The platform integrates the
-              PayPal API for APC payments and automated email notifications to
-              keep authors informed at every submission stage.
-            </li>
-            <li class="mb-2">
-              <b>Technologies and Metadata</b>: The application is built using
-              Laravel, Bootstrap, jQuery, MySQL, and XML. It generates XML
-              metadata for seamless submission to external platforms.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-4">
-          <div class="d-flex align-items-center gap-4 mb-3">
-            <div>
-              <h5 class="fw-semibold">One Click Portal</h5>
-            </div>
-            <div>
-              <a
-                class="me-2"
-                href="https://github.com/HassanAhmed36/Laravel-HRM"
-                target="_blank"
-              >
-                <i class="bi bi-github text-black me-2 fs-5 pb-4"></i>
-              </a>
-            </div>
-          </div>
-          <p>
-            The One Click Portal is a comprehensive office management system
-            used internally in offices by all employees. It includes a complete
-            HRM and project management system.
-          </p>
-          <ul>
-            <li class="mb-2">
-              <b>Project Management System</b>: Sales teams can create orders
-              that come from the manager of their respective department.
-              Managers then assign their team members and manage the complete
-              submission and revision drafting process.
-            </li>
-            <li class="mb-2">
-              <b>Human Resource Management</b>: The system includes complete
-              employee management features such as attendance tracking, leave
-              management, payroll, and a notice board.
-            </li>
-            <li class="mb-2">
-              <b>Chat and Notification System</b>: Each project has a chat
-              section that allows employees to communicate with their managers
-              and sales team if they encounter any problems. The system also
-              includes a comprehensive notification system that covers order
-              creation, assignment, submission drafts, chats, and more.
-            </li>
-            <li class="mb-2">
-              <b>Technologies and Metadata</b>: The application is built using
-              Laravel, Bootstrap, jQuery, MySQL, and XML. It generates XML
-              metadata for seamless submission to external platforms.
-            </li>
-          </ul>
-        </div>
-        <div class="mb-4">
-          <div class="d-flex align-items-center gap-4 mb-3">
-            <div>
-              <h5 class="fw-semibold">Robot Kombucha</h5>
-            </div>
-            <div>
-              <a
-                class="me-2"
-                href="https://github.com/HassanAhmed36/Laravel-HRM"
-                target="_blank"
-              >
-                <i class="bi bi-github text-black me-2 fs-5 pb-4"></i>
-              </a>
-            </div>
-          </div>
-          <p>
-            This is a project I developed at Oneclick. The client provided a
-            Figma design, and I created the project from scratch. For the
-            frontend, I used Bootstrap and jQuery, while the backend is built
-            with Laravel. The website features dynamic products managed from a
-            dashboard and includes an email subscription form with verification.
-          </p>
-        
-        </div>
 
-        <div class="mb-2">
-          <h5 class="fw-semibold">Human Resource Management System</h5>
-          <p>
-            I independently developed a complete management system for our
-            office. This system includes employee management, attendance
-            tracking, leave management, and payslip generation. It also handles
-            allowances and has a noticeboard for internal communication. This
-            all-in-one solution makes office management more efficient and
-            productive.
-            <a
-              class="me-2"
-              href="https://github.com/HassanAhmed36/Laravel-HRM,"
-              target="_blank"
-              >Github</a
-            >
-          </p>
+            <div class="my-4">
+                <h3 class="mb-4 fw-semibold">Projects</h3>
+                <div class="mb-4">
+                    <div class="d-flex align-items-center gap-4 mb-3">
+                        <div>
+                            <h5 class="fw-semibold">Guinness Press System</h5>
+                        </div>
+                        <div>
+                            <a class="me-2" href="https://github.com/HassanAhmed36/Guinness-Press-System"
+                                target="_blank"><i class="bi bi-github text-white me-2 fs-5 pb-4"></i></a>
+                            <a class="me-2" href="https://guinnesspress.org/" target="_blank"><i
+                                    class="bi bi-globe text-white me-2 fs-5 pb-4"></i></a>
+                        </div>
+                    </div>
+                    <p>
+                        The Guinness Press System is an article publishing platform designed
+                        to receive submissions from authors. The website is managed via a
+                        control dashboard and features three roles: author, board member,
+                        and admin. All modules are described below:
+                    </p>
+                    <ul>
+                        <li class="mb-2">
+                            <b>Submission Management</b>: Authors can submit articles after
+                            registering themselves. The submission process involves a
+                            multi-step workflow. Initially, the author submits the article and
+                            pays the Article Processing Charge (APC). Once payment is
+                            received, the submission is assigned to board members for review.
+                        </li>
+                        <li class="mb-2">
+                            <b>Peer Review Management</b>: After payment, the article is
+                            assigned to a board member for peer review. The board member
+                            reviews the article and either approves or rejects it.
+                        </li>
+                        <li class="mb-2">
+                            <b>Publication Management</b>: Once an article is approved, it
+                            moves to the publication stage. Articles are organized into
+                            issues, which belong to volumes connected to journals. The
+                            management of journals, volumes, issues, and articles is done
+                            based on their publishing date.
+                        </li>
+                        <li class="mb-2">
+                            <b>Payment and Notifications</b>: The platform integrates the
+                            PayPal API for APC payments and automated email notifications to
+                            keep authors informed at every submission stage.
+                        </li>
+                        <li class="mb-2">
+                            <b>Technologies and Metadata</b>: The application is built using
+                            Laravel, Bootstrap, jQuery, MySQL, and XML. It generates XML
+                            metadata for seamless submission to external platforms.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex align-items-center gap-4 mb-3">
+                        <div>
+                            <h5 class="fw-semibold">One Click Portal</h5>
+                        </div>
+                        <div>
+                            <a class="me-2" href="https://github.com/HassanAhmed36/One-Click-Portal" target="_blank">
+                                <i class="bi bi-github text-white me-2 fs-5 "></i>
+                            </a>
+                            <a class="me-2" href="https://newportal.1clickdevelopers.com" target="_blank">
+                                <i class="bi bi-globe text-white me-2 fs-5 "></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p>
+                        The One Click Portal is a comprehensive office management system
+                        used internally in offices by all employees. It includes a complete
+                        HRM and project management system.
+                    </p>
+                    <ul>
+                        <li class="mb-2">
+                            <b>Project Management System</b>: Sales teams can create orders
+                            that come from the manager of their respective department.
+                            Managers then assign their team members and manage the complete
+                            submission and revision drafting process.
+                        </li>
+                        <li class="mb-2">
+                            <b>Human Resource Management</b>: The system includes complete
+                            employee management features such as attendance tracking, leave
+                            management, payroll, and a notice board.
+                        </li>
+                        <li class="mb-2">
+                            <b>Chat and Notification System</b>: Each project has a chat
+                            section that allows employees to communicate with their managers
+                            and sales team if they encounter any problems. The system also
+                            includes a comprehensive notification system that covers order
+                            creation, assignment, submission drafts, chats, and more.
+                        </li>
+                        <li class="mb-2">
+                            <b>Technologies and Metadata</b>: The application is built using
+                            Laravel, Bootstrap, jQuery, MySQL, and XML. It generates XML
+                            metadata for seamless submission to external platforms.
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex align-items-center gap-4 mb-3">
+                        <div>
+                            <h5 class="fw-semibold">Robot Kombucha</h5>
+                        </div>
+                        <div>
+                            <a class="me-2" href="https://github.com/HassanAhmed36/Robot-kombucha.git" target="_blank">
+                                <i class="bi bi-github text-white me-2 fs-5 pb-4"></i>
+                            </a>
+                            <a class="me-2" href="https://robotkombucha.co.uk/" target="_blank">
+                                <i class="bi bi-globe text-white me-2 fs-5 pb-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p>
+                        This is a project I developed at Oneclick. The client provided a
+                        Figma design, and I created the project from scratch. For the
+                        frontend, I used Bootstrap and jQuery, while the backend is built
+                        with Laravel. The website features dynamic products managed from a
+                        dashboard and includes an email subscription form with verification.
+                    </p>
+
+                </div>
+
+                <div class="mb-2">
+                    <div class="d-flex align-items-center gap-4 mb-3">
+                        <div>
+                            <h5 class="fw-semibold">Human Resource Management System</h5>
+                        </div>
+                        <div>
+                            <a class="me-2" href="https://github.com/HassanAhmed36/Laravel-HRM" target="_blank">
+                                <i class="bi bi-github text-white me-2 fs-5 pb-4"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                    <p>
+                        The Employee Management System is a personal side project that I created to explore the
+                        intricacies of dynamic role
+                        management and permissions. This system serves as a foundational tool applicable in almost any
+                        management context,
+                        particularly Human Resource Management (HRM).
+                    </p>
+                    <p>The system is designed to handle various HR tasks through a control dashboard, making it a
+                        versatile tool for any
+                        organization.</p>
+                    <ul>
+                        <li class="mb-2">
+                            <b>Employee Creation and Authentication:</b> Manage employee profiles and ensure secure
+                            system access by adding new employees, capturing their personal and
+                            job-related details, and setting up secure login credentials.
+                        </li>
+                        <li class="mb-2">
+                            <b>Leave and Attendance Management
+                                :</b> Effectively track employee attendance and manage leave requests, approvals, and
+                            balances to ensure accurate payroll
+                            processing and employee entitlements.
+                        </li>
+                        <li class="mb-2">
+                            <b>Department, Designation, and Role Management:
+                            </b> Organize the workforce by creating and managing departments, assigning designations,
+                            and
+                            implementing role-based access
+                            controls to tailor system visibility and permissions based on specific roles.
+                        </li>
+                        <li class="mb-2">
+                            <b>Payroll Management: Allowances and Deductions</b>
+                            Streamline payroll processes by
+                            automatically generating payslips with salary details,
+                            allowances, and deductions, and
+                            managing the various components applicable to different employee roles.
+
+                        </li>
+
+                    </ul>
+                </div>
+
+               
+            </div>
         </div>
-        
-        <div class="mb-2">
-          <p class="fw-semibold">Mart managment System</p>
-          <p>
-            I developed an independent Mart Management System to manage stock,
-            purchases, sales, returns, and reports. This system includes
-            role-based access for customers, suppliers, and administrators. It
-            helps manage warehouses efficiently across multiple locations. The
-            system allows easy tracking of inventory, making it simple to
-            restock items when needed. It also ensures accurate record-keeping
-            and smooth processing of transactions. The detailed reports
-            generated by the system aid in better decision-making and improve
-            overall efficiency.
-            <a
-              class="me-2"
-              href="https://github.com/HassanAhmed36/Laravel-Mart-Management-POS"
-              target="_blank"
-              >Github</a
-            >
-          </p>
-        </div>
-      </div>
-      </div>
     </div>
-  </div>
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-  <script>
-    particlesJS("particles-js", {
-      particles: {
-        number: {
-          value: 200, 
-          density: {
-            enable: true,
-            value_area: 800,
-          },
-        },
-        color: {
-          value: "#ffffff",
-        },
-        shape: {
-          type: "circle",
-          stroke: {
-            width: 0,
-            color: "#000000",
-          },
-          polygon: {
-            nb_sides: 5,
-          },
-        },
-        opacity: {
-          value: 0.1,
-          random: true,
-          anim: {
-            enable: false,
-            speed: 1,
-            opacity_min: 0.1,
-            sync: false,
-          },
-        },
-        size: {
-          value: 5,
-          random: true,
-          anim: {
-            enable: false,
-            speed: 40,
-            size_min: 0.1,
-            sync: false,
-          },
-        },
-        line_linked: {
-          enable: false,
-          distance: 500,
-          color: "#ffffff",
-          opacity: 0.4,
-          width: 2,
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: "bottom",
-          random: false,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
-        },
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: {
-          onhover: {
-            enable: true,
-            mode: "bubble",
-          },
-          onclick: {
-            enable: true,
-            mode: "repulse",
-          },
-          resize: true,
-        },
-        modes: {
-          grab: {
-            distance: 400,
-            line_linked: {
-              opacity: 0.5,
+    </div>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: {
+                    value: 200,
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                },
+                color: {
+                    value: "#ffffff",
+                },
+                shape: {
+                    type: "circle",
+                    stroke: {
+                        width: 0,
+                        color: "#000000",
+                    },
+                    polygon: {
+                        nb_sides: 5,
+                    },
+                },
+                opacity: {
+                    value: 0.1,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false,
+                    },
+                },
+                size: {
+                    value: 5,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false,
+                    },
+                },
+                line_linked: {
+                    enable: false,
+                    distance: 500,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 2,
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "bottom",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200,
+                    },
+                },
             },
-          },
-          bubble: {
-            distance: 400,
-            size: 4,
-            duration: 0.3,
-            opacity: 1,
-            speed: 3,
-          },
-          repulse: {
-            distance: 200,
-            duration: 0.4,
-          },
-          push: {
-            particles_nb: 4,
-          },
-          remove: {
-            particles_nb: 2,
-          },
-        },
-      },
-      retina_detect: true,
-    });
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: "bubble",
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: "repulse",
+                    },
+                    resize: true,
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 0.5,
+                        },
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 4,
+                        duration: 0.3,
+                        opacity: 1,
+                        speed: 3,
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4,
+                    },
+                    push: {
+                        particles_nb: 4,
+                    },
+                    remove: {
+                        particles_nb: 2,
+                    },
+                },
+            },
+            retina_detect: true,
+        });
 
-    var count_particles, stats, update;
-    stats = new Stats();
-    stats.setMode(0);
-    stats.domElement.style.position = "absolute";
-    stats.domElement.style.left = "0px";
-    stats.domElement.style.top = "0px";
-    document.body.appendChild(stats.domElement);
-    count_particles = document.querySelector(".js-count-particles");
-    update = function () {
-      stats.begin();
-      stats.end();
-      if (
-        window.pJSDom[0].pJS.particles &&
-        window.pJSDom[0].pJS.particles.array
-      ) {
-        count_particles.innerText =
-          window.pJSDom[0].pJS.particles.array.length;
-      }
-      requestAnimationFrame(update);
-    };
-    requestAnimationFrame(update);
-  </script>
+        var count_particles, stats, update;
+        stats = new Stats();
+        stats.setMode(0);
+        stats.domElement.style.position = "absolute";
+        stats.domElement.style.left = "0px";
+        stats.domElement.style.top = "0px";
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector(".js-count-particles");
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (
+                window.pJSDom[0].pJS.particles &&
+                window.pJSDom[0].pJS.particles.array
+            ) {
+                count_particles.innerText =
+                    window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
